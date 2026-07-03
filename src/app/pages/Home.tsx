@@ -32,6 +32,7 @@ const projects = [
   }
 ];
 
+// Main Home Page Component
 export function Home() {
   // Define the main vertical axis position
   const axisX = "left-[3rem] md:left-[25%]";
@@ -55,22 +56,22 @@ export function Home() {
               >
                 {/* Cube Faces - 160px width/height means 80px translateZ */}
                 <div className="absolute inset-0 border-[1.5px] border-black bg-white/20 backdrop-blur-sm overflow-hidden" style={{ transform: 'translateZ(80px)' }}>
-                  <ImageWithFallback src={cubeImg1} alt="Cube Image 1" className="w-full h-full object-cover opacity-80" />
+                  <ImageWithFallback src={cubeImg1} alt="Cube Image 1" className="w-full h-full object-cover opacity-50" />
                 </div>
                 <div className="absolute inset-0 border-[1.5px] border-black bg-white/20 backdrop-blur-sm overflow-hidden" style={{ transform: 'rotateY(90deg) translateZ(80px)' }}>
-                  <ImageWithFallback src={cubeImg2} alt="Cube Image 2" className="w-full h-full object-cover opacity-80" />
+                  <ImageWithFallback src={cubeImg2} alt="Cube Image 2" className="w-full h-full object-cover opacity-50" />
                 </div>
                 <div className="absolute inset-0 border-[1.5px] border-black bg-white/20 backdrop-blur-sm overflow-hidden" style={{ transform: 'rotateY(180deg) translateZ(80px)' }}>
-                  <ImageWithFallback src={cubeImg3} alt="Cube Image 3" className="w-full h-full object-cover opacity-80" />
+                  <ImageWithFallback src={cubeImg3} alt="Cube Image 3" className="w-full h-full object-cover opacity-50" />
                 </div>
                 <div className="absolute inset-0 border-[1.5px] border-black bg-white/20 backdrop-blur-sm overflow-hidden" style={{ transform: 'rotateY(-90deg) translateZ(80px)' }}>
-                  <ImageWithFallback src={cubeImg4} alt="Cube Image 4" className="w-full h-full object-cover opacity-80" />
+                  <ImageWithFallback src={cubeImg4} alt="Cube Image 4" className="w-full h-full object-cover opacity-50" />
                 </div>
                 <div className="absolute inset-0 border-[1.5px] border-black bg-white/20 backdrop-blur-sm overflow-hidden" style={{ transform: 'rotateX(90deg) translateZ(80px)' }}>
-                  <ImageWithFallback src={cubeImg5} alt="Cube Image 5" className="w-full h-full object-cover opacity-80" />
+                  <ImageWithFallback src={cubeImg5} alt="Cube Image 5" className="w-full h-full object-cover opacity-50" />
                 </div>
                 <div className="absolute inset-0 border-[1.5px] border-black bg-white/20 backdrop-blur-sm overflow-hidden" style={{ transform: 'rotateX(-90deg) translateZ(80px)' }}>
-                  <ImageWithFallback src={cubeImg1} alt="Cube Image 6" className="w-full h-full object-cover opacity-80" />
+                  <ImageWithFallback src={cubeImg1} alt="Cube Image 6" className="w-full h-full object-cover opacity-50" />
                 </div>
               </motion.div>
             </div>

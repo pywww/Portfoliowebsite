@@ -200,6 +200,22 @@ export function ProjectDetail() {
         </div>
       </section>
 
+      {/* Back to Projects Button */}
+      <section className="flex justify-center mt-32 mb-16">
+        <Link 
+          to="/projects" 
+          className="group relative flex items-center justify-center w-32 h-32 md:w-40 md:h-40 rounded-full border border-gray-200 bg-white hover:bg-[#DCE9F5] hover:border-[#DCE9F5] transition-all duration-300"
+          style={{ transitionTimingFunction: 'cubic-bezier(0.2, 0, 0, 1)' }}
+        >
+          <div className="flex flex-col items-center text-center">
+            <ArrowLeft className="w-6 h-6 md:w-8 md:h-8 mb-2 text-gray-400 group-hover:text-black group-hover:-translate-x-1 transition-all duration-300" />
+            <span className="text-[10px] md:text-xs font-medium uppercase tracking-[0.2em] text-gray-400 group-hover:text-black transition-colors duration-300">
+              Projects
+            </span>
+          </div>
+        </Link>
+      </section>
+
     </motion.div>
   );
 }
